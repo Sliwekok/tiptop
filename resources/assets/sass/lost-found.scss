@@ -1,0 +1,308 @@
+#lost-found {
+
+  .search-box-wrapper {
+
+    padding: 30px 0;
+    //margin-bottom: 30px;
+    background: #000 url('../images/search-box.jpg') center center;
+    background-size: cover;
+
+    .search-box {
+      display: flex;
+
+      [class*="filter-"] {
+        margin: 0 5px;
+        &:first-of-type {
+          margin-left: 0;
+        }
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+      .filter-status, .filter-species {
+        flex-basis: 130px;
+      }
+      .filter-range {
+        flex-basis: 100px;
+      }
+      .filter-localization, .filter-words {
+        flex-grow: 1;
+      }
+    }
+
+  }
+
+  .animal {
+    width: 100%;
+    margin: 0 auto 30px auto;
+    border: 1px solid #dadada;
+    background: #fff;
+    box-shadow: 0 0 10px #dadada;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    .status-heading {
+      font-size: 14px;
+      font-weight: 500;
+      color: #fff;
+      text-align: center;
+      letter-spacing: 1px;
+      padding: 10px 10px;
+      text-transform: uppercase;
+      &.found {
+        background-color: $colorYellow;
+      }
+      &.lost {
+        background-color: $colorRed;
+      }
+    }
+    .photo {
+      border-bottom: 1px solid $colorGray2;
+      img {
+        width: 100%;
+      }
+    }
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      h1 {
+        font-size: 18px;
+        span {
+          color: $colorGray3;
+        }
+      }
+    }
+    .localization {
+      padding: 0 10px 10px 10px;
+    }
+    .description {
+      padding: 0 10px 10px 10px;
+    }
+
+    .buttons2 {
+      display: flex;
+      text-align: center;
+      border-top: 1px solid #dadada;
+      a {
+        width: 50%;
+        color: #000;
+        padding: 10px;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          //color: $colorOrange;
+          background-color: #f5f5f5;
+        }
+        &.facebook-share-btn {
+          &:hover {
+            //color: $colorFacebook;
+            background-color: #f5f5f5;
+          }
+        }
+      }
+    }
+
+    //.buttons {
+    //  text-align: center;
+    //  padding: 0 10px 10px 10px;
+    //  .btn-facebook {
+    //    margin-left: 10px;
+    //  }
+    //}
+  }
+
+  //.animal {
+  //  width: 640px;
+  //  margin: 0 auto 30px auto;
+  //  border: 1px solid #dadada;
+  //  background: #fff;
+  //  box-shadow: 0 0 10px #dadada;
+  //  -webkit-border-radius: 3px;
+  //  -moz-border-radius: 3px;
+  //  border-radius: 3px;
+  //  .status-heading {
+  //    font-size: 18px;
+  //    font-weight: 500;
+  //    color: #fff;
+  //    text-align: center;
+  //    letter-spacing: 1px;
+  //    padding: 10px 10px;
+  //    text-transform: uppercase;
+  //    &.found {
+  //      background-color: $colorYellow;
+  //    }
+  //    &.lost {
+  //      background-color: $colorRed;
+  //    }
+  //  }
+  //  .photo {
+  //    border-bottom: 1px solid $colorGray2;
+  //    img {
+  //      width: 100%;
+  //    }
+  //  }
+  //  .heading {
+  //    display: flex;
+  //    justify-content: space-between;
+  //    align-items: center;
+  //    padding: 10px;
+  //    h1 {
+  //      font-size: 24px;
+  //      span {
+  //        color: $colorGray3;
+  //      }
+  //    }
+  //  }
+  //  .localization {
+  //    padding: 0 10px 10px 10px;
+  //  }
+  //  .description {
+  //    padding: 0 10px 10px 10px;
+  //  }
+  //  .buttons {
+  //    text-align: center;
+  //    padding: 0 10px 10px 10px;
+  //    .btn-facebook {
+  //      margin-left: 10px;
+  //    }
+  //  }
+  //}
+
+  .pagination {
+    justify-content: center;
+    margin: 0 0 30px 0;
+    .page-item {
+      outline: none !important;
+      &.active {
+        .page-link {
+          color: #fff;
+          background-color: $colorOrange !important;
+          border-color: $colorOrange !important;
+        }
+      }
+    }
+  }
+
+  @media(max-width: 991px) {
+
+    .search-box-wrapper {
+      .search-box {
+        display: flex;
+        flex-wrap: wrap;
+
+        [class*="filter-"] {
+          margin: 0 5px;
+          &:first-of-type {
+            margin-left: 0;
+          }
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+        .filter-status, .filter-species {
+          flex-basis: 150px;
+        }
+        .filter-localization {
+          width: 40%;
+          margin-right: 0;
+        }
+        .filter-range {
+          margin-left: 0;
+          margin-top: 10px;
+          flex-basis: 150px;
+        }
+        .filter-words {
+          margin-top: 10px;
+          flex-grow: 1;
+        }
+        .submit-btn {
+          margin-top: 10px;
+        }
+      }
+    }
+
+  }
+
+  @media(max-width: 767px) {
+
+    .animal {
+      width: 100%;
+      .status-heading {
+        font-size: 13px;
+        padding: 5px;
+      }
+      .heading {
+        h1 {
+          font-size: 16px;
+        }
+        .update-date {
+          display: none;
+        }
+      }
+      .localization {
+        p {
+          font-size: 12px;
+        }
+      }
+      .description {
+        p {
+          font-size: 12px;
+        }
+      }
+      .buttons {
+        .btn {
+          font-size: 13px;
+          padding: 5px 10px;
+        }
+      }
+    }
+
+    .welcome {
+      padding: 15px 0;
+      h3 {
+        font-size: 18px;
+        margin: 0 0 5px 0;
+      }
+    }
+
+    .search-box-wrapper {
+      .search-box {
+        display: flex;
+        flex-wrap: wrap;
+
+        .filter-status, .filter-species {
+          flex-basis: 100px;
+          flex-grow: 1;
+        }
+        .filter-localization {
+          width: 100%;
+          margin-left: 0;
+          margin-top: 10px;
+        }
+        .filter-range {
+          width: 100%;
+          flex-basis: 100%;
+        }
+        .filter-words {
+          width: 100%;
+          margin-left: 0;
+        }
+        .submit-btn {
+          margin-top: 10px;
+          width: 100%;
+          flex-basis: 100%;
+          .btn {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+  }
+
+}

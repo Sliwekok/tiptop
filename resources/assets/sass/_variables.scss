@@ -1,0 +1,29 @@
+// Body
+$body-bg: #fff;
+
+// Typography
+$font-family-sans-serif: "Rubik", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+$colorGray1: #F2F2F2;
+$colorGray2: #DADADA;
+$colorGray3: #A2A2A2;
+$colorGray4: #5A5A5A;
+$colorFacebook: #3D599B;
+$colorOrange: #e66040;
+$colorYellow: #DBA511;
+$colorGreen: #2EB86A;
+$colorRed: #DB1111;
+
+$theme-colors: (
+        "warning": #E66040,
+        "facebook": #3D599B,
+        "light": $colorGray2
+);
+
+$link-color: $colorOrange;
+$link-decoration: none;
+$link-hover-color: lighten($link-color, 15%);
+$link-hover-decoration: none;
+
