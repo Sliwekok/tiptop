@@ -13,3 +13,4 @@ yarn-error.log
 /public_html/upload/animals/*
 /.env
 .env
+.env.example
