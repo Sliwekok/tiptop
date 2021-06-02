@@ -1,0 +1,24 @@
+nav{
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding-top: 2.5vh;
+    padding-bottom: 1vh;
+    border-bottom: 1px lighten($body-bg, 15%) solid;
+    
+    .logo{
+        text-align: center;
+    }
+
+    .navItems{
+        display: inline-flex;
+        flex-wrap: wrap;
+    
+        .navItem{
+
+            border: 3px transparent solid;
+            cursor: pointer;
+           
+        }
+
+    }
+}
