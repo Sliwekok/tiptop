@@ -13,42 +13,66 @@ img{
 }
 .mainNav{
     font-size: 12px;
-    padding-top: 2vh;
+    /* padding: 2vh 20vh; */
     padding-bottom: 2vh;
-}
-.logo{
-    display: block !important;
-    
-}
-.mobile{
-    display: none !important;
-}
-.mainNav .navItems{
+    width: 100%;
+    padding-top: 1vh;
     display: inline-flex;
     flex-wrap: wrap;
 }
 
-.mainNav .rightSide{
+.mobile{
+    display: none !important;
+}
+.mainNav .logo img{
+    width: 80%;
+}
+.mainNav .logo{
+    width: 40%;
+    text-align: center;
+    padding-left: 5%;
+}
+.mainNav .assets{
+    width: 50%;
+    padding-left: 5%;
     display: inline-flex;
-    padding-top: 2.5vh;
 }
-.mainNav .navItem{
+.mainNav .assets .asset{
+    width: auto;
     display: inline-flex;
-    flex-wrap: wrap;
+    align-items: center;
 }
-.mainNav .navItem .text p{
-    width: 100%;
+.assets .asset .picture{
+    padding-top: 2%;
 }
-.mainNav .navItem .text .higher{
+.assets .asset .text{
+    margin-left: 5%;
+}
+.mainNav .asset .text .higher{
     padding-bottom: 0px;
     margin-bottom: 0px;
     font-size: 14px;
 }
-.mainNav .navItem .text .lower{
+.mainNav .asset .text .lower{
    font-size: 10px;
    color: #9A9A9A;
    padding-top: 0px;
    margin-top: 0px;
+}
+.mainNav .asset.phone{
+    width: 32%;
+}
+.mainNav .asset.address{
+    width: 48%;
+}
+.mainNav .asset.hours{
+    width: 20%;
+}
+.mainNav .asset.address .picture{
+    padding-top: 1%;
+}
+.mainNav .asset.hours .text .higher{
+    padding-top: 10%;
 }
 #carBig{
     padding:0px;
@@ -79,12 +103,20 @@ img{
     display: inline-flex;
     flex-wrap: wrap;
     margin-top: 3vh;
-    margin-bottom: 2vh;
+    margin-bottom: 5vh;
     padding: 0px 20px;
 }
 .services .serviceItem{
     display: inline-flex;
     flex-wrap: wrap;
+}
+.services .serviceItem .photo{
+    width: 10%;
+    padding-top: 2.5%;
+}
+.services .serviceItem .text{
+    width: 85%;
+    margin-left: 5%;
 }
 .services .topic{
     font-size: 18px;
@@ -116,22 +148,30 @@ footer{
     padding-bottom: 0px !important;
     margin-bottom: 0px;
 }
+footer .logo .signature{ 
+    color: #FFF;
+}
 footer .copyright{
     background-color: #1C1B1B;
     color: rgba(255, 255, 255, 0.43);
     margin: 0px;
-    margin-top: 1vh;
+    margin-top: 2vh;
     display: inline-flex;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
     flex-wrap: wrap;
+    width: 100%;
+}
+footer .copyright div{
+    width: 50%;
+    text-align: center;
 }
 
 /* wersja mobilna - edycje */
 
 @media(max-width: 672px){
-    .mainNav .godzina{
-        display: none;
+    .mainNav .hours{
+        display: none !important;
     }
     .pc{
         display: none !important;
@@ -140,19 +180,41 @@ footer .copyright{
         display: block !important;
         text-align: center;
     }
-    .mainNav .graphic{
-        text-align: center;
-        padding-bottom: 0px;
+    .mainNav{
+        padding: 0% 5%;
     }
-    .mainNav .text{
-        text-align: center;
+    .mainNav .logo{
+        width: 100%;
+        padding-top: 5%;
     }
-    .mainNav .navItem .text .higher{
+    .mainNav .assets{
+        width: 100%;
+        padding-top: 2vh;
+    }
+    .mainNav .assets .asset{
+        width: 50% ;
+        padding: 0px;
+        margin: 0px;
+        text-align:center;
+    
+    }
+    .mainNav .asset.phone{
+        width: 50%;
+        text-align:center;
+        padding: auto;
+    }
+    .mainNav .asset.address{
+        width: 50%;
+        text-align:center;
+        padding: auto;
+    }
+    .mainNav .asset .text .higher{
         font-size: 9px;
     }
-    .mainNav .navItem .text.lower{
+    .mainNav .asset .text .lower{
         font-size: 7px;
     }
+    
     .headline{
         padding-bottom: 0px;
     }
